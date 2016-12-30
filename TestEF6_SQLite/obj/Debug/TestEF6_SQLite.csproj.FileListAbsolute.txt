@@ -1,0 +1,17 @@
+C:\Users\James.Peng\Documents\Visual Studio 2013\Projects\TestEF6_SQLite\TestEF6_SQLite\bin\Debug\TestEF6_SQLite.exe.config
+C:\Users\James.Peng\Documents\Visual Studio 2013\Projects\TestEF6_SQLite\TestEF6_SQLite\bin\Debug\TestEF6_SQLite.exe
+C:\Users\James.Peng\Documents\Visual Studio 2013\Projects\TestEF6_SQLite\TestEF6_SQLite\bin\Debug\TestEF6_SQLite.pdb
+C:\Users\James.Peng\Documents\Visual Studio 2013\Projects\TestEF6_SQLite\TestEF6_SQLite\bin\Debug\EntityFramework.dll
+C:\Users\James.Peng\Documents\Visual Studio 2013\Projects\TestEF6_SQLite\TestEF6_SQLite\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\James.Peng\Documents\Visual Studio 2013\Projects\TestEF6_SQLite\TestEF6_SQLite\bin\Debug\System.Data.SQLite.dll
+C:\Users\James.Peng\Documents\Visual Studio 2013\Projects\TestEF6_SQLite\TestEF6_SQLite\bin\Debug\System.Data.SQLite.EF6.dll
+C:\Users\James.Peng\Documents\Visual Studio 2013\Projects\TestEF6_SQLite\TestEF6_SQLite\bin\Debug\System.Data.SQLite.Linq.dll
+C:\Users\James.Peng\Documents\Visual Studio 2013\Projects\TestEF6_SQLite\TestEF6_SQLite\bin\Debug\EntityFramework.xml
+C:\Users\James.Peng\Documents\Visual Studio 2013\Projects\TestEF6_SQLite\TestEF6_SQLite\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\James.Peng\Documents\Visual Studio 2013\Projects\TestEF6_SQLite\TestEF6_SQLite\bin\Debug\System.Data.SQLite.xml
+C:\Users\James.Peng\Documents\Visual Studio 2013\Projects\TestEF6_SQLite\TestEF6_SQLite\obj\Debug\TestEF6_SQLite.csprojResolveAssemblyReference.cache
+C:\Users\James.Peng\Documents\Visual Studio 2013\Projects\TestEF6_SQLite\TestEF6_SQLite\obj\Debug\TestEF6_SQLite.Form1.resources
+C:\Users\James.Peng\Documents\Visual Studio 2013\Projects\TestEF6_SQLite\TestEF6_SQLite\obj\Debug\TestEF6_SQLite.Properties.Resources.resources
+C:\Users\James.Peng\Documents\Visual Studio 2013\Projects\TestEF6_SQLite\TestEF6_SQLite\obj\Debug\TestEF6_SQLite.csproj.GenerateResource.Cache
+C:\Users\James.Peng\Documents\Visual Studio 2013\Projects\TestEF6_SQLite\TestEF6_SQLite\obj\Debug\TestEF6_SQLite.exe
+C:\Users\James.Peng\Documents\Visual Studio 2013\Projects\TestEF6_SQLite\TestEF6_SQLite\obj\Debug\TestEF6_SQLite.pdb

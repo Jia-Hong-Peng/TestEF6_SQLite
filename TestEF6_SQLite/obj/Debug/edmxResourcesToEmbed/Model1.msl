@@ -1,0 +1,78 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="EsiModelStoreContainer" CdmEntityContainer="EsiEntities">
+    <EntitySetMapping Name="Table_ObjectInfoType">
+      <EntityTypeMapping TypeName="EsiModel.Table_ObjectInfoType">
+        <MappingFragment StoreEntitySet="Table_ObjectInfoType">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="id_ObjectType" ColumnName="id_ObjectType" />
+          <ScalarProperty Name="DefaultString" ColumnName="DefaultString" />
+          <ScalarProperty Name="MinData" ColumnName="MinData" />
+          <ScalarProperty Name="MaxData" ColumnName="MaxData" />
+          <ScalarProperty Name="DefaultData" ColumnName="DefaultData" />
+          <ScalarProperty Name="MinValue" ColumnName="MinValue" />
+          <ScalarProperty Name="MaxValue" ColumnName="MaxValue" />
+          <ScalarProperty Name="DefaultValue" ColumnName="DefaultValue" />
+          <ScalarProperty Name="Unit" ColumnName="Unit" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Table_ObjectType">
+      <EntityTypeMapping TypeName="EsiModel.Table_ObjectType">
+        <MappingFragment StoreEntitySet="Table_ObjectType">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="Index" ColumnName="Index" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Comment" ColumnName="Comment" />
+          <ScalarProperty Name="Type" ColumnName="Type" />
+          <ScalarProperty Name="BitSize" ColumnName="BitSize" />
+          <ScalarProperty Name="Flags_Access" ColumnName="Flags_Access" />
+          <ScalarProperty Name="Flags_Category" ColumnName="Flags_Category" />
+          <ScalarProperty Name="Flags_PdoMapping" ColumnName="Flags_PdoMapping" />
+          <ScalarProperty Name="Flags_SafetyMapping" ColumnName="Flags_SafetyMapping" />
+          <ScalarProperty Name="Flags_Attribute" ColumnName="Flags_Attribute" />
+          <ScalarProperty Name="Flags_Transition" ColumnName="Flags_Transition" />
+          <ScalarProperty Name="Flags_SdoAccess" ColumnName="Flags_SdoAccess" />
+          <ScalarProperty Name="Flags_Backup" ColumnName="Flags_Backup" />
+          <ScalarProperty Name="Flags_Setting" ColumnName="Flags_Setting" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Table_PropertyType">
+      <EntityTypeMapping TypeName="EsiModel.Table_PropertyType">
+        <MappingFragment StoreEntitySet="Table_PropertyType">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="id_ObjectType" ColumnName="id_ObjectType" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Value" ColumnName="Value" />
+          <ScalarProperty Name="Desc" ColumnName="Desc" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Table_SubItem">
+      <EntityTypeMapping TypeName="EsiModel.Table_SubItem">
+        <MappingFragment StoreEntitySet="Table_SubItem">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="id_ObjectInfoType" ColumnName="id_ObjectInfoType" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Table_SubItem_Info">
+      <EntityTypeMapping TypeName="EsiModel.Table_SubItem_Info">
+        <MappingFragment StoreEntitySet="Table_SubItem_Info">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="id_SubItem" ColumnName="id_SubItem" />
+          <ScalarProperty Name="DefaultString" ColumnName="DefaultString" />
+          <ScalarProperty Name="MinData" ColumnName="MinData" />
+          <ScalarProperty Name="MaxData" ColumnName="MaxData" />
+          <ScalarProperty Name="DefaultData" ColumnName="DefaultData" />
+          <ScalarProperty Name="MinValue" ColumnName="MinValue" />
+          <ScalarProperty Name="MaxValue" ColumnName="MaxValue" />
+          <ScalarProperty Name="DefaultValue" ColumnName="DefaultValue" />
+          <ScalarProperty Name="Unit" ColumnName="Unit" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

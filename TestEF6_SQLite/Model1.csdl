@@ -1,0 +1,150 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="EsiModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="Table_ObjectInfoType">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="id_ObjectType" Type="Int64" />
+    <Property Name="DefaultString" Type="String" MaxLength="2147483647" FixedLength="false" Unicode="true" />
+    <Property Name="MinData" Type="String" MaxLength="2147483647" FixedLength="false" Unicode="true" />
+    <Property Name="MaxData" Type="String" MaxLength="2147483647" FixedLength="false" Unicode="true" />
+    <Property Name="DefaultData" Type="String" MaxLength="2147483647" FixedLength="false" Unicode="true" />
+    <Property Name="MinValue" Type="String" MaxLength="2147483647" FixedLength="false" Unicode="true" />
+    <Property Name="MaxValue" Type="String" MaxLength="2147483647" FixedLength="false" Unicode="true" />
+    <Property Name="DefaultValue" Type="String" MaxLength="2147483647" FixedLength="false" Unicode="true" />
+    <Property Name="Unit" Type="String" MaxLength="2147483647" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="Table_ObjectType" Relationship="Self.FK_Table_ObjectInfoType_0_0" FromRole="Table_ObjectInfoType" ToRole="Table_ObjectType" />
+    <NavigationProperty Name="Table_SubItem" Relationship="Self.FK_Table_SubItem_0_0" FromRole="Table_ObjectInfoType" ToRole="Table_SubItem" />
+  </EntityType>
+  <EntityType Name="Table_ObjectType">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Index" Type="String" MaxLength="2147483647" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Name" Type="String" MaxLength="2147483647" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Comment" Type="String" MaxLength="2147483647" FixedLength="false" Unicode="true" />
+    <Property Name="Type" Type="String" MaxLength="2147483647" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="BitSize" Type="String" MaxLength="2147483647" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Flags_Access" Type="String" MaxLength="2147483647" FixedLength="false" Unicode="true" />
+    <Property Name="Flags_Category" Type="String" MaxLength="2147483647" FixedLength="false" Unicode="true" />
+    <Property Name="Flags_PdoMapping" Type="String" MaxLength="2147483647" FixedLength="false" Unicode="true" />
+    <Property Name="Flags_SafetyMapping" Type="String" MaxLength="2147483647" FixedLength="false" Unicode="true" />
+    <Property Name="Flags_Attribute" Type="String" MaxLength="2147483647" FixedLength="false" Unicode="true" />
+    <Property Name="Flags_Transition" Type="String" MaxLength="2147483647" FixedLength="false" Unicode="true" />
+    <Property Name="Flags_SdoAccess" Type="String" MaxLength="2147483647" FixedLength="false" Unicode="true" />
+    <Property Name="Flags_Backup" Type="String" MaxLength="2147483647" FixedLength="false" Unicode="true" />
+    <Property Name="Flags_Setting" Type="String" MaxLength="2147483647" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="Table_ObjectInfoType" Relationship="Self.FK_Table_ObjectInfoType_0_0" FromRole="Table_ObjectType" ToRole="Table_ObjectInfoType" />
+    <NavigationProperty Name="Table_PropertyType" Relationship="Self.FK_Table_PropertyType_0_0" FromRole="Table_ObjectType" ToRole="Table_PropertyType" />
+  </EntityType>
+  <EntityType Name="Table_PropertyType">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="id_ObjectType" Type="Int64" />
+    <Property Name="Name" Type="String" MaxLength="2147483647" FixedLength="false" Unicode="true" />
+    <Property Name="Value" Type="String" MaxLength="2147483647" FixedLength="false" Unicode="true" />
+    <Property Name="Desc" Type="String" MaxLength="2147483647" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="Table_ObjectType" Relationship="Self.FK_Table_PropertyType_0_0" FromRole="Table_PropertyType" ToRole="Table_ObjectType" />
+  </EntityType>
+  <EntityType Name="Table_SubItem">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="id_ObjectInfoType" Type="Int64" Nullable="false" />
+    <Property Name="Name" Type="String" MaxLength="2147483647" FixedLength="false" Unicode="true" Nullable="false" />
+    <NavigationProperty Name="Table_ObjectInfoType" Relationship="Self.FK_Table_SubItem_0_0" FromRole="Table_SubItem" ToRole="Table_ObjectInfoType" />
+    <NavigationProperty Name="Table_SubItem_Info" Relationship="Self.FK_Table_SubItem_Info_0_0" FromRole="Table_SubItem" ToRole="Table_SubItem_Info" />
+  </EntityType>
+  <EntityType Name="Table_SubItem_Info">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="id_SubItem" Type="Int64" />
+    <Property Name="DefaultString" Type="String" MaxLength="2147483647" FixedLength="false" Unicode="true" />
+    <Property Name="MinData" Type="String" MaxLength="2147483647" FixedLength="false" Unicode="true" />
+    <Property Name="MaxData" Type="String" MaxLength="2147483647" FixedLength="false" Unicode="true" />
+    <Property Name="DefaultData" Type="String" MaxLength="2147483647" FixedLength="false" Unicode="true" />
+    <Property Name="MinValue" Type="String" MaxLength="2147483647" FixedLength="false" Unicode="true" />
+    <Property Name="MaxValue" Type="String" MaxLength="2147483647" FixedLength="false" Unicode="true" />
+    <Property Name="DefaultValue" Type="String" MaxLength="2147483647" FixedLength="false" Unicode="true" />
+    <Property Name="Unit" Type="String" MaxLength="2147483647" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="Table_SubItem" Relationship="Self.FK_Table_SubItem_Info_0_0" FromRole="Table_SubItem_Info" ToRole="Table_SubItem" />
+  </EntityType>
+  <Association Name="FK_Table_ObjectInfoType_0_0">
+    <End Role="Table_ObjectType" Type="Self.Table_ObjectType" Multiplicity="0..1" />
+    <End Role="Table_ObjectInfoType" Type="Self.Table_ObjectInfoType" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Table_ObjectType">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="Table_ObjectInfoType">
+        <PropertyRef Name="id_ObjectType" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Table_SubItem_0_0">
+    <End Role="Table_ObjectInfoType" Type="Self.Table_ObjectInfoType" Multiplicity="1" />
+    <End Role="Table_SubItem" Type="Self.Table_SubItem" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Table_ObjectInfoType">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="Table_SubItem">
+        <PropertyRef Name="id_ObjectInfoType" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Table_PropertyType_0_0">
+    <End Role="Table_ObjectType" Type="Self.Table_ObjectType" Multiplicity="0..1" />
+    <End Role="Table_PropertyType" Type="Self.Table_PropertyType" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Table_ObjectType">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="Table_PropertyType">
+        <PropertyRef Name="id_ObjectType" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Table_SubItem_Info_0_0">
+    <End Role="Table_SubItem" Type="Self.Table_SubItem" Multiplicity="0..1" />
+    <End Role="Table_SubItem_Info" Type="Self.Table_SubItem_Info" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Table_SubItem">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="Table_SubItem_Info">
+        <PropertyRef Name="id_SubItem" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="EsiEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Table_ObjectInfoType" EntityType="Self.Table_ObjectInfoType" />
+    <EntitySet Name="Table_ObjectType" EntityType="Self.Table_ObjectType" />
+    <EntitySet Name="Table_PropertyType" EntityType="Self.Table_PropertyType" />
+    <EntitySet Name="Table_SubItem" EntityType="Self.Table_SubItem" />
+    <EntitySet Name="Table_SubItem_Info" EntityType="Self.Table_SubItem_Info" />
+    <AssociationSet Name="FK_Table_ObjectInfoType_0_0" Association="Self.FK_Table_ObjectInfoType_0_0">
+      <End Role="Table_ObjectType" EntitySet="Table_ObjectType" />
+      <End Role="Table_ObjectInfoType" EntitySet="Table_ObjectInfoType" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Table_SubItem_0_0" Association="Self.FK_Table_SubItem_0_0">
+      <End Role="Table_ObjectInfoType" EntitySet="Table_ObjectInfoType" />
+      <End Role="Table_SubItem" EntitySet="Table_SubItem" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Table_PropertyType_0_0" Association="Self.FK_Table_PropertyType_0_0">
+      <End Role="Table_ObjectType" EntitySet="Table_ObjectType" />
+      <End Role="Table_PropertyType" EntitySet="Table_PropertyType" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Table_SubItem_Info_0_0" Association="Self.FK_Table_SubItem_Info_0_0">
+      <End Role="Table_SubItem" EntitySet="Table_SubItem" />
+      <End Role="Table_SubItem_Info" EntitySet="Table_SubItem_Info" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>
